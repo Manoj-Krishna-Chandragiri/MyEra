@@ -24,7 +24,7 @@ A simple React + react-konva application for the MyEra Frontend Internship mini-
 
 1. Clone the repository:
    ```sh
-   git clone <repo-url>
+   git clone https://github.com/Manoj-Krishna-Chandragiri/MyEra.git
    cd myera-sticker-app-master
    ```
 2. Install dependencies:
@@ -36,26 +36,6 @@ A simple React + react-konva application for the MyEra Frontend Internship mini-
    npm start
    ```
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Project Structure
-
-```
-myera-sticker-app/
-├── public/
-│   └── stickers/
-│       ├── sticker1.png
-│       ├── sticker2.png
-│       └── sticker3.png
-├── src/
-│   ├── components/
-│   │   ├── Canvas.js
-│   │   └── StickerButton.js
-│   ├── App.js
-│   ├── App.css
-│   └── index.js
-├── README.md
-└── package.json
-```
 
 ## Dependencies
 
@@ -75,10 +55,5 @@ myera-sticker-app/
 - [x] Stickers snap to a 40px grid (bonus)
 - [x] No backend or data persistence
 - [x] Clean project structure and README
-
----
-
-**Demo:**  
-(Optional) Record a 1-minute video or GIF showing the app in action.
 
 ---
