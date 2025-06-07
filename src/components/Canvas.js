@@ -5,7 +5,6 @@ import useImage from 'use-image';
 const Canvas = ({ stickers, updateStickerPosition, deleteSticker }) => {
   const stageRef = useRef(null);
 
-  // Download canvas as PNG
   const handleDownload = () => {
     const dataURL = stageRef.current.toDataURL();
     const link = document.createElement('a');
@@ -37,7 +36,6 @@ const Canvas = ({ stickers, updateStickerPosition, deleteSticker }) => {
   );
 };
 
-// Sticker component for individual draggable images
 const Sticker = ({ sticker, updatePosition, deleteSticker }) => {
   const [image] = useImage(sticker.src);
 

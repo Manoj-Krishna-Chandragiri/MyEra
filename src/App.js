@@ -6,18 +6,16 @@ import './App.css';
 const App = () => {
   const [stickers, setStickers] = useState([]);
 
-  // Add a new sticker with a default position, snapped to 40px grid
   const addSticker = (imageSrc) => {
     const newSticker = {
-      id: Date.now(), // Unique ID
+      id: Date.now(),
       src: imageSrc,
-      x: Math.round(50 / 40) * 40, // Snap to 40px grid
+      x: Math.round(50 / 40) * 40,
       y: Math.round(50 / 40) * 40,
     };
     setStickers([...stickers, newSticker]);
   };
 
-  // Update sticker position after dragging, snapping to 40px grid
   const updateStickerPosition = (id, x, y) => {
     setStickers(
       stickers.map((sticker) =>
@@ -32,7 +30,6 @@ const App = () => {
     );
   };
 
-  // Delete sticker on double-click
   const deleteSticker = (id) => {
     setStickers(stickers.filter((sticker) => sticker.id !== id));
   };
@@ -54,7 +51,6 @@ const App = () => {
             imageSrc="/stickers/sticker3.png"
             onClick={() => addSticker('/stickers/sticker3.png')}
           />
-          
         </div>
         <Canvas
           stickers={stickers}
